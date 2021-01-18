@@ -1,0 +1,56 @@
+body{
+    background-image: url('4.jpg');
+    background-size: cover;
+}
+.box{
+    padding-left: 150px;
+    padding-top:200px;
+}
+
+.box input{
+    position: relative;
+    width: 97%;
+    height: 60%;
+    border: none;
+    margin: 15px 0 20px;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: whitesmoke;
+}
+
+.button{
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    font-size: 24px;
+    display:inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.button:hover{
+    background: rgb(13, 112, 112);
+}
+
+
+.slidercontainer{
+    margin-top: 10px;
+    width: 15%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    border-radius: 12px;
+    box-shadow: 0px 1px 10px 1px black;
+}
+
+p{
+    background:darkcyan; 
+    border-radius: 8px;
+    width: 80px;  
+    color: blanchedalmond;
+}

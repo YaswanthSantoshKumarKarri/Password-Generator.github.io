@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nobody</title>
+<link rel="stylesheet" type="text/css" href="index2.css">
+</head>
+<body>
+
+  <div class="box">
+    
+    <h1 style="color:rgb(54, 238, 252);font-size: 40px;">Random Password Generator</h1>
+    <input type="text" name="" placeholder="create password" id="demo" readonly=""></input>
+    <br>
+    <div class="button" onclick="myfunction()">GET PASSWORD</div>
+
+    <div class="slidercontainer">
+        <input type="range" min="4" max="32" value="1" id="myrange" class="slider">
+        <p >Value:<span id="value"></span></p>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+var slider = document.getElementById('myrange');
+var output=document.getElementById('value');
+output.innerHTML=slider.value;
+
+slider.oninput=function(){
+  output.innerHTML=this.value;
+}
+function myfunction(){
+  var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTVWXYZ!@#$&*)(^%";
+  var passwordlength =output.innerHTML;
+  var password = "";
+  for (var i=0;i<passwordlength;i++){
+    var randomnumber=Math.floor(Math.random()*chars.length);
+    password += chars.substring(randomnumber,randomnumber+1);
+  }
+  document.getElementById("demo").value=password
+
+
+}
+</script>
+</body>
+</html>
